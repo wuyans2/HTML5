@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/shoppingcar.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/shoppingcar-jquery.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<!--顶部-->
+			<section id="top">
+				<div id="top-c">
+					<div id="top-c-left">
+						<span id="login">
+						<span>欢迎光临莎莎网！</span>
+						<a href="login.html" class="login">登录</a>
+						<span>或</span>
+						<a href="register.html">免费注册</a>
+						</span>
+					</div>
+					<div id="top-c-right">
+						<ul>
+							<li class="top-li l" id="mycount">
+								<a href="#">
+									我的账户<img src="img/index/header/xiasanjiao.png" />
+								</a>
+								<ul id="mybox">
+									<li class="my">我的订单</li>
+									<li class="my">我的积分</li>
+									<li class="my">我的优惠券</li>
+									<li class="my">我的收藏</li>
+									<li class="my">我的评价</li>
+								</ul>
+							</li>
+							<li class="top-li l">
+								<a href="#"><span class="iconfont rose">&#xe61a;</span> 我的购物车</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">我的收藏</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">我的站内信</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">积分中心</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">Global site</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">关注我们</a>&nbsp;
+								<i><img src="img/index/header/weibo.png" /></i>&nbsp;
+								<i><img src="img/index/header/weixin.png" /></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--侧边栏-->
+			<div id="sidebar">
+				<ul class="up">
+					<li class="side" id="fath1">
+						<a href="#"><span class="iconfont gold">&#xe61c;</span></a>
+						<div class="sonBox" id="son1">
+							我的账户
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+					<li class="car">
+						<a href="#">
+							<span class="iconfont gold">&#xe61a;</span>
+							<br />购<br />物<br />车<br />
+							<b>
+							<span>0</span>
+						</b>
+						</a>
+					</li>
+					<li class="side" id="fath2">
+						<a href="#"><span class="iconfont gold">&#xe607;</span></a>
+						<div class="sonBox" id="son2">
+							我的收藏
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+					<li class="side" id="fath3">
+						<a href="#"><span class="iconfont gold">&#xe609;</span></a>
+						<div class="sonBox" id="son3">
+							浏览记录
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+				</ul>
+				<ul class="down">
+					<li class="side">
+						<a href="#"><span class="iconfont gold">&#xe631;</span></a>
+					</li>
+					<li class="side">
+						<a href="#"><span class="iconfont gold">&#xe615;</span></a>
+					</li>
+					<li class="side big">
+						<a id="back" href="#top">
+							<span class="iconfont gold">&#xe608;</span>
+							<br />TOP
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="car-logo">
+				<div id="car-logo-c">
+					<div class="salogo">
+						<a href="index.html"><img src="img/index/header/shashalogo.png" /></a>
+					</div>
+					<div class="flow"></div>
+					<div id="icon">
+						<img src="img/shoppingcar/icon01.png" />
+						<img src="img/shoppingcar/icon02.png" />
+						<img src="img/shoppingcar/icon03.png" />
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--大身体-->
+		<div id="carbody">
+			<div id="carbody-c" class="c">
+				<div id="car-tip">
+					保税仓直送商品结帐提示 1. 保税仓直送商品不可与香港直送商品同时结帐; 2. 保税仓直送商品每张订单总金额不可超过 ¥5000。
+				</div>
+				<div id="car-goods"></div>
+				<div id="car-text">
+					香港特快直送商品订单满￥288免运费；订单满￥144减运费￥45；未满￥144运费￥90
+				</div>
+
+				<table class="car-tab">
+					<thead>
+						<tr class="trth">
+							<th class="th1">
+								<input type="checkbox" id="all" /> 香港特快直送
+							</th>
+							<th class="th2">商品名称</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>小计</th>
+							<th>&emsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="trfath">
+							<td>
+								<div class="tdinp"><input type="checkbox" class="check" /></div>
+								<div class="tdimg">
+									<img src="img/detail/bpic1.jpg" />
+								</div>
+							</td>
+							<td class="td1">
+								<p>伊丽莎白 ·雅顿 升级版金装时空修护胶囊 </p>
+								<p class="spec">60粒</p>
+								<p class="huodong"><span class="jiang">直降</span><span>直降活动</span></p>
+							</td>
+							<td><span>￥</span><span class="oneprice">128</span></td>
+							<td>
+								<ul class="car-td-ul">
+									<li class="num l sub">-</li>
+									<li class="num l md">1</li>
+									<li class="num l add">+</li>
+								</ul>
+							</td>
+							<td>
+								<p style="color: #ec3e7d;">
+									<span>￥</span><span class="calculate">128</span></p>
+								<p class="spec">商品已包税</p>
+							</td>
+							<td>
+								<button class="btn">删除</button>
+							</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr class="trfath">
+							<td>
+								<div class="tdinp"><input type="checkbox" class="check" /></div>
+								<div class="tdimg">
+									<img src="img/detail/bpic5.jpg" />
+								</div>
+							</td>
+							<td class="td1">
+								<p>伊丽莎白 ·雅顿 升级版金装时空修护胶囊 </p>
+								<p class="spec">60粒</p>
+								<p class="huodong"><span class="jiang">直降</span><span>直降活动</span></p>
+							</td>
+							<td><span>￥</span><span class="oneprice">328</span></td>
+							<td>
+								<ul class="car-td-ul">
+									<li class="num l sub">-</li>
+									<li class="num l md">1</li>
+									<li class="num l add">+</li>
+								</ul>
+							</td>
+							<td>
+								<p style="color: #ec3e7d;">
+									<span>￥</span><span class="calculate">328</span></p>
+								<p class="spec">商品已包税</p>
+							</td>
+							<td>
+								<button class="btn">删除</button>
+							</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr class="trfath">
+							<td>
+								<div class="tdinp"><input type="checkbox" class="check" /></div>
+								<div class="tdimg">
+									<img src="img/detail/bpic2.jpg" />
+								</div>
+							</td>
+							<td class="td1">
+								<p>伊丽莎白 ·雅顿 升级版金装时空修护胶囊 </p>
+								<p class="spec">60粒</p>
+								<p class="huodong"><span class="jiang">直降</span><span>直降活动</span></p>
+							</td>
+							<td><span>￥</span><span class="oneprice">228</span></td>
+							<td>
+								<ul class="car-td-ul">
+									<li class="num l sub">-</li>
+									<li class="num l md">1</li>
+									<li class="num l add">+</li>
+								</ul>
+							</td>
+							<td>
+								<p style="color: #ec3e7d;">
+									<span>￥</span><span class="calculate">228</span></p>
+								<p class="spec">商品已包税</p>
+							</td>
+							<td>
+								<button class="btn">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="car-tab">
+					<thead>
+						<tr class="trth">
+							<th class="th1">
+								已享受的优惠
+							</th>
+							<th class="th2">优惠项目</th>
+							<th>&emsp;</th>
+							<th>&emsp;</th>
+							<th>&emsp;</th>
+							<th>&emsp;</th>
+						</tr>
+					</thead>
+				</table>
+
+				<div id="car-buy">
+					<span>继续购物</span>
+					<span>清空购物车</span>
+					<span class="rr">商品应付金额</span><span class="buypri">￥</span><span class="buypri totalnum">0</span>
+					<span class="buybtn r">结账</span>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-c">
+				<section id="footer-left">
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">常见问题</li>
+							<li class="sli">常见问题</li>
+							<li class="sli">联络我们</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">付款方式</li>
+							<li class="sli">付款方式</li>
+							<li class="sli">积分支付</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">配送方式</li>
+							<li class="sli">配送说明</li>
+							<li class="sli">追踪订单</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">售后服务</li>
+							<li class="sli">正品保证</li>
+							<li class="sli">价格承诺</li>
+							<li class="sli">30日退换保证</li>
+							<li class="sli">退款程序</li>
+							<li class="sli">更改订单</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">莎莎会员</li>
+							<li class="sli">积分奖赏</li>
+							<li class="sli">VIP会员计划</li>
+						</ul>
+					</div>
+				</section>
+				<section id="footer-right">
+					<div id="footer-weibo">
+						<img src="img/index/icon/weiboQR.jpg" />
+						<p>莎莎网官方微博</p>
+						<p>@莎莎网</p>
+					</div>
+					<div id="footer-weixin">
+						<img src="img/index/icon/weixinQR.jpg" />
+						<p>莎莎网官方微信</p>
+						<p>ID:hksasadotcom</p>
+					</div>
+				</section>
+				<section id="c-bot">
+					<img src="img/index/icon/foot-pic.jpg" />
+				</section>
+
+			</div>
+			<div id="footer-bott">
+				<div id="bott-c">
+					<div id="bott-about">
+						<a href="#" class="abo-a">关于莎莎</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">使用条款</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">隐私策略</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">批发服务</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">招商合作</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">帮助中心</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">港澳店推广</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">人才招聘</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">联系我们</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">其他送货地址</a>
+					</div>
+					<div id="bott-com">Copyright 2000-2019 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

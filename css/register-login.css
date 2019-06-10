@@ -1,0 +1,272 @@
+#top{
+	width: 100%;
+	height: 32px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
+}
+#top-c{
+	width: 1200px;
+	height: 32px;
+	margin: 0 auto;
+}
+
+#top-c-left{
+	width: 201px;
+	height: 32px;
+	float: left;
+}
+#top-c-right{
+	width: 665px;
+	height: 32px;
+	float: right;
+}
+#login{
+	line-height: 32px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.login{
+	margin-left: 10px;
+}
+#login a{
+	text-decoration: underline;
+	color: #ec3e7d;
+}
+.top-li{
+	padding: 0 12px;
+	line-height: 32px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.top-li a{
+	color: #6c6c6c;
+	text-decoration: none;
+}
+.top-li:hover{
+	background-color: white;
+}
+/************************我的账户二级菜单***************************/
+#mycount{
+	
+	position: relative;
+}
+.my{
+    font-size: 12px;
+    line-height: 32px;
+    color: #6c6c6c;
+}
+#mybox{
+	width: 86px;
+	height: auto;
+	padding: 5px 10px 10px 20px;
+	background-color: white;
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	z-index: 1;
+	box-shadow: 0px 4px 8px rgba(0,0,0,.2);
+	display: none;
+	
+}
+#mycount:hover #mybox{
+	display: block;
+}
+#mycount img{
+	width: 10px;
+	height: 10px;
+}
+.rose{
+	color:#fa3778;
+}
+/******************logo*******************/
+#logo{
+	width: 100%;
+	height: 95px;
+}
+#logo-c{
+	width: 1090px;
+	height: 95px;
+	margin: 0 auto;
+	position: relative;
+}
+#shashalogo{
+	width: 300px;
+	height: 45px;
+	position: absolute;
+    top: 21px;
+}
+/****************注册页面*****************/
+#page{
+	width: 1090px;
+	height: 511px;
+}
+#reg{
+	width: 1090px;
+	height: 511px;
+	margin-top: 40px;
+	background-image: url(../img/register-login/page.jpg);
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+/*******************注册输入框*******************/
+#reginp{
+	width: 420px;
+	height: 511px;
+	background-color: white;
+	margin-right: 68px;
+    box-shadow: 0 0 5px #e1e1e1, 0 0 15px #e1e1e1;
+    float: right;
+}
+#signup{
+	width: 350px;
+	height: 431px;
+	margin-bottom: 10px;
+	padding: 35px;
+}
+#title{
+	width: 350px;
+	height: 22px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #5a5d6c;
+}
+
+#title span{
+	font-size: 12px;
+	float: right;
+}
+#title span a{
+	color: #ec3e7d;
+	text-decoration: none;
+}
+#signupbox{
+	width: 350px;
+	height: 359px;
+	margin-top: 40px;
+}
+.reg-item{
+	width: 350px;
+	height: 51px;
+	margin-bottom: 10px;
+}
+.reg-item-check{
+	width: 350px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.reg-item-btn{
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+.inptx{
+	width: 340px;
+	height: 26px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+}
+
+li p{
+	color: #666666;;
+	font-size: 13px;
+	padding: 2px 10px;
+	color: white;
+}
+.yzm{
+	width: 120px;
+}
+.reg-item img{
+	width: 100px;
+	height: 34px;
+}
+#mohu a{
+	text-decoration: none;
+	color: inherit;
+}
+.read{
+	vertical-align: middle;
+}
+.reg-item-check{
+	color: #3e3e3e;
+	font-size: 13px;
+}
+#reg-btn{
+	width: 350px;
+	height: 40px;
+	background-color: #ec3e7d;
+	border: 0;
+	color: white;
+	font-size: 15px;
+}
+.reg-item-check a{
+	color: #ec3e7d;
+	text-decoration: none;
+}
+input,button{
+	outline:none;
+}
+#check-test{
+	color: white;
+	font-weight: bold;
+}
+
+/*********************登录修改部分*********************/
+#log{
+	width: 1090px;
+	height: 511px;
+	margin-top: 40px;
+	background-image: url(../img/register-login/login.png);
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+.loinptx{
+	width: 340px;
+	height: 26px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+}
+.yzm{
+	width: 120px;
+}
+.log-item-check{
+	width: 350px;
+	height:51px ;
+}
+.log-item-btn{
+	width: 350px;
+	height:40px ;
+}
+#logpage{
+	width: 1090px;
+	height: 551px;
+}
+.log-item-check a{
+	color: #ec3e7d;
+	text-decoration: none;
+}
+#agree{
+	display: block;
+	width: 350px;
+	height: 22px;
+	padding-top: 40px;
+	font-size: 14px;
+}
+.logimg{
+	width: 115px;
+	height: 35px;
+	padding: 10px 0;
+	float: left;
+}
+#name{
+	width: 310px;
+	padding-left: 30px;
+	background: url(../img/register-login/q.png) 6px -120px no-repeat;
+}
+#passwd{
+	width: 310px;
+	padding-left: 30px;
+	background: url(../img/register-login/q.png) 6px -160px no-repeat;
+}
+

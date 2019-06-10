@@ -1,0 +1,487 @@
+/******************头部顶部*******************/
+/*******字体图标颜色********/
+.rose{
+	color:#fa3778;
+}
+.up .iconfont,.down .iconfont{
+	color: #c69a62;
+	font-size: 20px;
+	line-height: 40px;
+}
+.down .big .iconfont{
+	font-size: 50px;
+	text-align: center;
+	position: absolute;
+	left: -3px;
+	line-height: 25px;
+}
+/**************************************8*/
+#top{
+	width: 100%;
+	height: 32px;
+	background-color: #f2f2f2;
+}
+#top-c{
+	width: 1200px;
+	height: 32px;
+	margin: 0 auto;
+}
+
+#top-c-left{
+	width: 201px;
+	height: 32px;
+	float: left;
+}
+#top-c-right{
+	width: 665px;
+	height: 32px;
+	float: right;
+}
+#login{
+	line-height: 32px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.login{
+	margin-left: 10px;
+}
+#login a{
+	text-decoration: underline;
+	color: #ec3e7d;
+}
+.top-li{
+	padding: 0 12px;
+	line-height: 32px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.top-li a{
+	color: #6c6c6c;
+	text-decoration: none;
+}
+.top-li:hover{
+	background-color: white;
+}
+/************************我的账户二级菜单***************************/
+#mycount{
+	
+	position: relative;
+}
+.my{
+    font-size: 12px;
+    line-height: 32px;
+    color: #6c6c6c;
+}
+#mybox{
+	width: 86px;
+	height: auto;
+	padding: 5px 10px 10px 20px;
+	background-color: white;
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	z-index: 1;
+	box-shadow: 0px 4px 8px rgba(0,0,0,.2);
+	display: none;
+	
+}
+#mycount:hover #mybox{
+	display: block;
+}
+#mycount img{
+	width: 10px;
+	height: 10px;
+}
+/***************侧边栏***************/
+#sidebar{
+	height: 100%;
+	width: 40px;
+	background: #4c4c4c;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+.up{
+	position: absolute;
+	top: 10%;
+	color: white;
+	
+}
+.down{
+	position: absolute;
+	bottom: 5%;
+	color: white;
+	
+}
+.side{
+	height: 40px;
+	text-align: center;
+	width: 40px;
+	position: relative;
+}
+.car{
+	padding: 15px 0;
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
+    margin: 10px auto;
+    height: 90px;
+    text-align: center;
+    width: 40px;
+}
+.up a,.down a{
+	text-decoration: none;
+	color: white;
+}
+.car b{
+	background-color: #ec3e7d;
+    line-height: 13px;
+    padding: 0 3px;
+    min-width: 12px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+}
+.up li:hover{
+	background-color: #fa3778;
+}
+.down li:nth-child(1):hover,.down li:nth-child(2):hover{
+	background-color: #fa3778;
+}
+/****************侧边栏的移动盒子********************/
+.sonBox{
+	width: 100px;
+	height: 40px;
+	background: #4c4c4c;
+	position: absolute;
+	right: 40px;
+	top: 0px;
+	font-size: 14px;
+	line-height: 40px;
+	transition: left 1s linear 0s;
+	display: none;
+}
+.sonBox img{
+	display: block;
+	margin-left: 98px;
+	margin-top: -28px;
+}
+@-webkit-keyframes left{
+	0%{
+		opacity: 0;
+		left: -150px;
+	}
+	100%{
+		opacity: 1;
+		left: -100px;
+	}
+}
+#fath1:hover #son1,#fath2:hover #son2,#fath3:hover #son3{
+	display: block;
+	animation: left 1s;
+}
+
+/**************logo***************/
+#car-logo{
+	height: 95px;
+	background-color: white;
+}
+#car-logo-c{
+	width: 1090px;
+	height: 95px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.salogo{
+	width: 300px;
+	height: 45px;
+	position: absolute;
+	top: 21px;
+}
+.flow{
+	width: 472px;
+	height: 62px;
+	position: absolute;
+	top: 20px;
+	left: 280px;
+	background: url(../img/shoppingcar/cartstep.png) no-repeat;
+}
+#icon{
+	padding-top: 30px;
+    width: 235px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+}
+
+/****************大身体carbody******************/
+#carbody{
+	height: auto;
+	background-color: #f2f2f2;
+}
+
+#carbody-c{
+	width: 985px;
+	height: auto;
+	background: #f2f2f2;
+	padding-top: 20px;
+	overflow: hidden;
+}
+#car-tip{
+	width: 971px;
+	height: 30px;
+	background-color: #ffab2e;
+	padding-left: 14px;
+	color: white;
+	line-height: 30px;
+}
+#car-goods{
+	height: 38px;
+	margin-top: 20px;
+	background: url(../img/shoppingcar/home-bt.png) no-repeat;
+	background-position: 0 -845px;
+}
+#car-text{
+	margin-top: 20px;
+	height: 19px;
+	padding-bottom: 10px;
+	color: #666666;
+	font-size: 14px;
+	text-align: right;
+}
+/******************购物车中的表格**********************/
+.car-tab{
+	background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.car-tab .trth{
+	height: 37px;
+}
+.car-tab thead{
+	border-bottom: 1px solid #eee;
+	color: #666666;
+    font-size: 14px;
+    font-style: normal;
+}
+.car-tab td{
+	padding-top: 25px;
+	position: relative;
+	vertical-align: top;
+	color: #666666;
+	font-size: 14px;
+}
+.th1{
+	padding-left: 10px;
+    text-align: left;
+    border-left: 5px solid #ed407e;
+    width: 180px;
+}
+.th2{
+	text-align: left;
+}
+tbody{
+	height: 135px;
+    border-bottom: 1px solid #efefef;
+}
+.tdinp{
+	display: inline-block;
+    vertical-align: top;
+    padding-top: 24px;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tdimg{
+	display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: -45px;
+}
+.tdimg img{
+	width: 100px;
+    height: 100px;
+}
+.td1{
+	text-align: left;
+	color: #666666;
+	font-size: 14px;
+}
+.spec{
+	padding-top: 10px;
+	color: #b2b2b2;
+	font-size: 14px;
+}
+.huodong{
+	padding-top: 10px;
+}
+.jiang{
+	margin-right: 6px;
+    background-color: #c69a62;
+    color: #ffffff;
+    background: #be9a5e;
+    padding: 1px 5px;
+}
+.car-td-ul{
+	width: 83px;
+	height: 25px;
+	display: block;
+	margin: auto;
+}
+.num{
+	width: 25px;
+	height: 22px;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f1;
+    font-size: 14px;
+    line-height: 22px;
+    cursor:pointer ;
+}
+.md{
+	border: 1px solid #f2f2f2;
+	background-color: white;
+	cursor:default;
+}
+.btn{
+	width: 50px;
+	height: 40px;
+	background-color: white;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+/*****************购买结算行*****************/
+#car-buy{
+	height: 41px;
+	background: white;
+	padding-left:25px ;
+	color: #565d67;
+	font-size: 14px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+#car-buy span{
+	padding: 0 5px;
+}
+.buynum{
+	color: #db3f7e;
+}
+.buypri{
+	color: #db3f7e;
+	font-size: 18px;
+	font-weight: bold;
+}
+.buybtn{
+	display: inline-block;
+	width: 132px;
+	height: 39px;
+	background-color: #db3f7e;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.rr{
+	margin-left: 470px;
+}
+/******************底部**********************/
+footer{
+	width: 100%;
+	height: 373px;
+}
+#footer-c{
+	width: 1200px;
+	height: 271px;
+	background-color: white;
+	margin: 0 auto;
+}
+#footer-bott{
+	width: 100%;
+	height: 102px;
+	background-color: black;
+}
+#footer-left{
+	width: 900px;
+	height: 166px;
+	padding-bottom: 18px;
+	float: left;
+}
+.footer-help{
+	width:90px ;
+	height: auto;
+	margin: 16px 90px 0 0;
+}
+.bli{
+	color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.sli{
+	color: #999;
+    font-size: 12px;
+    line-height: 25px;
+}
+#footer-right{
+	width: 300px;
+	height: 198px;
+	float: right;
+}
+#c-bot{
+	width: 900px;
+	height: 67px;
+	float: left;
+}
+#footer-weibo{
+	width: 128px;
+	height: 178px;
+	float: left;
+	padding-top:20px;
+}
+#footer-weixin{
+	width: 128px;
+	height: 178px;
+	float: right;
+	padding-top:20px;
+}
+#footer-right img{
+	width: 128px;
+	height: 128px;
+}
+#footer-right p{
+	font-weight: bold;
+    color: #111111;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#bott-c{
+	width: 1200px;
+	height: 50px;
+	padding: 26px 0;
+	margin: 0 auto;
+}
+#bott-about{
+	width: 100%;
+	height: 24px;
+}
+#bott-about a{
+	text-decoration: none;
+	color: white;
+}
+#bott-com{
+	height: 12px;
+	padding: 14px 0 0 5px;
+	color: white;
+}
+.abo-a{
+	padding: 1px 5px;
+	color: white;
+	line-height: 22px;
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/indexCreate.js"></script>
+		<script type="text/javascript" src="js/index-jquery.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header>
+			<!--顶部-->
+			<section id="top">
+				<div id="top-c">
+					<div id="top-c-left">
+						<span id="login">
+								<span>欢迎光临莎莎网！</span>
+						<a href="login.html" class="login">登录</a>
+						<span>或</span>
+						<a href="register.html">免费注册</a>
+						</span>
+					</div>
+					<div id="top-c-right">
+						<ul>
+							<li class="top-li l" id="mycount">
+								<a href="#">
+									<span class="iconfont rose">&#xe61c;</span> 我的账户<img src="img/index/header/xiasanjiao.png" />
+								</a>
+								<ul id="mybox">
+									<li class="my">我的订单</li>
+									<li class="my">我的积分</li>
+									<li class="my">我的优惠券</li>
+									<li class="my">我的收藏</li>
+									<li class="my">我的评价</li>
+								</ul>
+							</li>
+							<li class="top-li l">
+								<a href="#"><span class="iconfont rose">&#xe61a;</span> 我的购物车</a>
+							</li>
+							<li class="top-li l">
+								<a href="#"><span class="iconfont rose">&#xe607;</span> 我的收藏</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">我的站内信</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">积分中心</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">Global site</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">关注我们</a>&nbsp;
+								<i><img src="img/index/header/weibo.png" /></i>&nbsp;
+								<i><img src="img/index/header/weixin.png" /></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--搜索栏-->
+			<section id="logo">
+				<div id="logo-c">
+					<div id="shashalogo">
+						<a href="index.html"><img src="img/index/header/shashalogo.png" /></a>
+					</div>
+					<div id="search">
+						<div id="search-input">
+							<input type="text" placeholder="面膜" />
+							<button id="inp-btn">搜索</button>
+						</div>
+						<div id="search-list">
+							<a href="#">洗面奶</a>
+							<a href="#">兰蔻粉水</a>
+							<a href="#">卸妆水</a>
+							<a href="goodslist.html">口红</a>
+							<a href="#">科颜氏</a>
+							<a href="#">润唇膏</a>
+							<a href="#">瑞士葆丽美</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--导航栏-->
+			<section id="nav">
+				<div id="nav-c">
+					<div id="all-category">
+						<section id="category-header">
+							<img src="img/index/header/line.png" />全部分类
+						</section>
+						<section id="category-list">
+							<ul>
+								<li class="category-list-item" id="fist-item">
+									<div class="list-item-pic" id="pic1"></div>
+									<div class="list-item-md">面部护理</div>
+									<i class="list-item-right">
+												<!--<img src="img/index/header/dayuhao1.png" />-->
+											</i>
+
+									<div id="category-list-item-show">
+										<p><b>洁面/磨砂</b></p>
+										<p><span>泡沫洁面乳</span><span>洁面啫喱</span><span>洁面奶</span><span>洁面啫喱</span><span>洁面奶</span></p>
+										<p><span>洁面皂</span><span>洁面粉</span><span>磨砂膏</span><span>洁面啫喱</span><span>磨砂啫喱</span></p>
+										<p><b>眼部/唇部/颈部护理</b></p>
+										<p><span>眼霜</span><span>眼胶</span><span>眼部精华</span><span>眼膜</span><span>睡眠免洗眼膜</span></p>
+										<p><span>润唇膏</span><span>唇部精华</span><span>唇膜</span><span>唇部磨砂</span><span>颈霜</span></p>
+									</div>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic2"></div>
+									<div class="list-item-md">彩妆</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic3"></div>
+									<div class="list-item-md">香水</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic4"></div>
+									<div class="list-item-md">健康美肌</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic5"></div>
+									<div class="list-item-md">纤体美胸</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic6"></div>
+									<div class="list-item-md">个人护理</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic7"></div>
+									<div class="list-item-md">男士专区</div>
+									<i class="list-item-right"></i>
+								</li>
+								<li class="category-list-item">
+									<div class="list-item-pic" id="pic8"></div>
+									<div class="list-item-md">孕婴护理</div>
+									<i class="list-item-right"></i>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div id="nav-list">
+						<ul>
+							<li class="nav-item">香港特快直送</li>
+							<li class="nav-sep">/</li>
+							<li class="nav-item">闪电保税仓</li>
+							<li class="nav-sep">/</li>
+							<li class="nav-item">限时特卖
+								<img src="img/index/header/hot.png" />
+							</li>
+							<li class="nav-sep">/</li>
+							<li class="nav-item">贵宾专享</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div id="sidebar">
+				<ul class="up">
+					<li class="side" id="fath1">
+						<a href="#"><span class="iconfont gold">&#xe61c;</span></a>
+						<div class="sonBox" id="son1">
+							我的账户
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+					<li class="car">
+						<a href="shoppingcar.html">
+							<span class="iconfont gold">&#xe61a;</span>
+							<br />购<br />物<br />车<br />
+							<b>
+									<span>0</span>
+								</b>
+						</a>
+					</li>
+					<li class="side" id="fath2">
+						<a href="#"><span class="iconfont gold">&#xe607;</span></a>
+						<div class="sonBox" id="son2">
+							我的收藏
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+					<li class="side" id="fath3">
+						<a href="#"><span class="iconfont gold">&#xe609;</span></a>
+						<div class="sonBox" id="son3">
+							浏览记录
+							<img src="img/index/icon/sanjiao.png" />
+						</div>
+					</li>
+				</ul>
+				<ul class="down">
+					<li class="side">
+						<a href="#"><span class="iconfont gold">&#xe631;</span></a>
+					</li>
+					<li class="side">
+						<a href="#"><span class="iconfont gold">&#xe615;</span></a>
+					</li>
+					<li class="side big">
+						<a id="back" href="#top">
+							<span class="iconfont gold">&#xe608;</span>
+							<br />TOP
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--图片轮播-->
+		<div id="bigpic">
+			<ul id="picbox">
+				<li class="bigPic"><img src="img/index/bigpic/bigpic1.jpg" /></li>
+				<li class="bigPic"><img src="img/index/bigpic/bigpic2.jpg" /></li>
+				<li class="bigPic"><img src="img/index/bigpic/bigpic3.jpg" /></li>
+				<li class="bigPic"><img src="img/index/bigpic/bigpic4.jpg" /></li>
+			</ul>
+			<ul id="btnBox">
+				<li class="picBtn"></li>
+				<li class="picBtn"></li>
+				<li class="picBtn"></li>
+				<li class="picBtn"></li>
+			</ul>
+		</div>
+		<!--公告-->
+		<div id="notice">
+			<section id="notice-c">
+				<div id="announ" class="l"><span class="iconfont">&#xe635;</span></div>
+				<div id="ann">公告</div>
+				<!--公告的水平轮播-->
+				<div id="ann-text">
+					<ul id="ulbox">
+						<li class="oli">保税仓物流 | 四川及西藏地区物流延迟 2019.01.08</li>
+						<li class="oli">双旦节 | 莎莎网双旦节领奖通知 2018.12.18</li>
+						<li class="oli">决战双十一 | 消费排行榜得奖名单 2018.12.28</li>
+						<li class="oli">保税仓物流 | 2019春节假期通知 2019.01.10</li>
+						<li class="oli">保税仓物流 | 四川及西藏地区物流延迟 2019.01.08</li>
+						<li class="oli">双旦节 | 莎莎网双旦节领奖通知 2018.12.18</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!--侧边锚点导航栏-->
+		<div id="sidenav">
+			<ul id="side">
+				<li class="dh">
+					<a id="floor_0" href="#must-check">
+						<span class="iconfont">&#xe6c6;</span>
+						<p>必看</p>
+					</a>
+				</li>
+				<li class="dh">
+					<a id="floor_1" href="#limit-header">
+						<span class="iconfont">&#xe628;</span>
+						<p>特卖</p>
+					</a>
+				</li>
+				<li class="dh">
+					<a id="floor_3" href="#sold-top-header">
+						<span class="iconfont">&#xe6ab;</span>
+						<p>排行榜</p>
+					</a>
+				</li>
+				<li class="dh">
+					<a id="floor_2" href="#new-body">
+						<span class="iconfont">&#xe60c;</span>
+						<p>新品</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--大身体-->
+		<div id="body">
+			<!--莎莎推荐-->
+			<div id="body-goods">
+				<div id="recommend">
+					<section class="comm">
+						<img src="img/index/top/sort1.jpg" />
+					</section>
+					<section class="comm">
+						<img src="img/index/top/sort2.jpg" />
+					</section>
+					<section class="comm-last">
+						<img src="img/index/top/sort3.jpg" />
+					</section>
+				</div>
+				<!--莎莎承诺-->
+				<div id="sasa_promise">
+					<section class="promise-item l">
+						<div class="promise-icon l" id="icon1"></div>
+						<div class="promise-text l">
+							<p class="text-title">香港特快直送</p>
+							<p class="text-next">包税零扣关 ¥288免邮</p>
+						</div>
+					</section>
+					<section class="promise-item l">
+						<div class="promise-icon l" id="icon2"></div>
+						<div class="promise-text l">
+							<p class="text-title">正品保证</p>
+							<p class="text-next">专注美妆护肤40年</p>
+						</div>
+					</section>
+					<section class="promise-item l">
+						<div class="promise-icon l" id="icon3"></div>
+						<div class="promise-text l">
+							<p class="text-title">保税仓直送</p>
+							<p class="text-next">包税零扣关 ¥168免邮</p>
+						</div>
+					</section>
+					<section class="promise-item l">
+						<div class="promise-icon l" id="icon4"></div>
+						<div class="promise-text l">
+							<p class="text-title">30天退换保证</p>
+							<p class="text-next">为您提供售后无忧保障</p>
+						</div>
+					</section>
+					<section class="promise-item l promise-item-last">
+						<div class="promise-icon l" id="icon5"></div>
+						<div class="promise-text l">
+							<p class="text-title">香港上市</p>
+							<p class="text-next">股票代码 HK00178</p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!--每日必看-->
+			<div id="everyday">
+				<section id="must-check" class="find">
+					<img src="img/index/everyday/must_check.png" />
+				</section>
+				<!--每日必看里面动态创建的盒子父容器-->
+				<section id="must-check-body">
+					<!--每日必看里面动态创建的盒子原结构-->
+					<!--<div id="check-goods">
+					<img src="img/index/everyday/everyday-pic1.jpg"/>
+					<div class="check-goods-info">
+						<p class="check-info-title">护肤团</p>
+						<p class="check-festival">年货节</p>
+						<p class="check-date">新年新肌新高度</p>
+						<span class="check-buynow">立即疯抢</span>
+					</div>	
+				</div>-->
+
+				</section>
+			</div>
+
+			<!--限时特卖-->
+			<div id="limited-offer">
+				<section id="limit-header" class="find">
+					<img src="img/index/limit/limitted_offer.png" />
+				</section>
+				<section id="limited-time">每天09:00准时开抢</section>
+				<!--每日必看里面动态创建的盒子父容器-->
+				<section id="limited-offer-body">
+					<!--限时特卖里面动态创建的盒子原结构-->
+					<!--<div class="limited-goods">
+					<div class="limited-goods-img">
+						<img src="img/index/limit/limit-pic2.jpg" />
+						<i class="limited-count">
+							<span class="italic">9.1</span> 折
+						</i>
+					</div>
+					<div class="limited-goods-info">
+						<div class="limted-countdown">
+							剩余<span class="hour">11</span>:
+							<span class="min">04</span>:
+							<span class="sec">59</span>
+						</div>
+						<div class="limted-detail">
+							<div class="limited-goods-text">
+								<i></i>
+								促进肌肤新陈代谢正常化，具有调整肌肤酸碱值平衡以及修护的效果，供给肌肤养分让肌肤充满弹性，兼具保养及抗细胞脂氧化作用。
+							</div>
+							<div class="limited-goods-introduce">
+								<b>国内保税仓 零扣关 包税 </b>
+								SK-II 护肤精华露(神仙水) 330毫升                
+							</div>
+							<div class="limited-goods-price">
+								<div class="limited-goods-newprice">
+									<span class="yuan">￥</span>
+									<span class="num">1679</span>
+								</div>
+								<div class="limited-goods-oldprice">
+									<span>￥1988</span>
+								</div>
+							</div>
+						</div>
+						<div class="limted-btn">
+							<span class="sold">已售2件</span>
+							<span class="limted-buynow">马上抢</span>
+						</div>
+					</div>
+				</div>-->
+				</section>
+				<section id="limit-more">
+					<a href="#" id="more">
+						查看更多特卖 &nbsp;
+						<span>►</span>
+					</a>
+				</section>
+			</div>
+			<!--销售排行版-->
+			<div id="sold-top-body">
+				<section id="sold-top-header" class="find">
+					<img src="img/index/top/ranking.png" />
+				</section>
+				<section class="top-column">
+					<div class="column-hd">护肤排行榜</div>
+					<!--销售排行版里面动态创建的盒子父容器-->
+					<div class="item-father">
+						<!--销售排行版里面动态创建的盒子原结构-->
+						<!--<div class="column-item">
+						<div class="top1"><img src="img/index/top/ranking_1.png"/></div>
+						<a href="#"><img src="img/index/top/skin1.jpg"/></a>
+						<div class="item-info">
+							<div class="item-name">
+								<a href="#">
+									<b class="yellow">香港特快直送 零扣关 包税 </b>
+									<span> 安娜贝拉  海藻补水滋养面膜 </span>
+								</a>
+							</div>
+							<div class="item-price">
+								<span class="top-newprice">￥37</span>
+								<span class="top-oldprice">￥99</span>
+								<span class="top-soldnum">已售2066</span>
+							</div>
+						</div>
+					</div>-->
+					</div>
+				</section>
+				<section class="top-column">
+					<div class="column-hd">彩妆排行榜</div>
+					<!--销售排行版第二列动态创建的盒子父容器-->
+					<div class="item-father">
+						<!--<div class="column-item">
+						<div class="top1"><img src="img/index/top/ranking_1.png"/></div>
+						<a href="#"><img src="img/index/top/skin1.jpg"/></a>
+						<div class="item-info">
+							<div class="item-name">
+								<a href="#">
+									<b class="yellow">香港特快直送 零扣关 包税 </b>
+									<span> 安娜贝拉  海藻补水滋养面膜 </span>
+								</a>
+							</div>
+							<div class="item-price">
+								<span class="top-newprice">￥37</span>
+								<span class="top-oldprice">￥99</span>
+								<span class="top-soldnum">已售2066</span>
+							</div>
+						</div>
+					</div>-->
+					</div>
+				</section>
+				<section class="top-column-r">
+					<div class="column-hd">个护排行榜</div>
+					<!--销售排行版第三列列动态创建的盒子父容器-->
+					<div class="item-father">
+						<!--<div class="column-item">
+						<div class="top1"><img src="img/index/top/ranking_1.png"/></div>
+						<a href="#"><img src="img/index/top/skin1.jpg"/></a>
+						<div class="item-info">
+							<div class="item-name">
+								<a href="#">
+									<b class="yellow">香港特快直送 零扣关 包税 </b>
+									<span> 安娜贝拉  海藻补水滋养面膜 </span>
+								</a>
+							</div>
+							<div class="item-price">
+								<span class="top-newprice">￥37</span>
+								<span class="top-oldprice">￥99</span>
+								<span class="top-soldnum">已售2066</span>
+							</div>
+						</div>
+					</div>-->
+					</div>
+				</section>
+			</div>
+			<!--新品-->
+			<div id="new-body">
+				<!--新品头部-图片-->
+				<div id="new-top" class="find"><img src="img/index/new/new_arrival.png" /> </div>
+				<!--新品动态创建盒子父容器-->
+				<div id="new-goods-body">
+					<!--新品动态创建盒子原结构-->
+					<!--<a href="#">
+						<div class="new-goods">
+							<div class="new-goods-pic">
+								<img src="img/index/new/new1.jpg" />
+								<div class="new-icon">
+									<p>新品<br />上市</p>
+								</div>
+								<div class="country">
+									<div class="coun-pic"><img src="img/index/new/western_icon.png" /> </div>
+									<span>欧美品牌</span>
+								</div>
+							</div>
+							<div class="new-text">
+								<b class="yellow">香港特快直送 零扣关 包税 </b> 泰国妆蕾 泰国妆蕾玫瑰纯露野麦仁面膜 [官方正品保证 全球独家首发] 10片
+							</div>
+							<div class="new-goods-price">
+								<span class="new-yuan">￥</span>
+								<span class="new-newprice">37</span>
+								<span class="top-oldprice">￥69.0</span>
+							</div>
+						</div>
+					</a>-->
+				</div>
+			</div>
+		</div>
+		<!--下面的承诺-->
+		<div id="sasa_promise">
+			<section class="promise-item l">
+				<div class="promise-icon l" id="icon1"></div>
+				<div class="promise-text l">
+					<p class="text-title">香港特快直送</p>
+					<p class="text-next">包税零扣关 ¥288免邮</p>
+				</div>
+			</section>
+			<section class="promise-item l">
+				<div class="promise-icon l" id="icon2"></div>
+				<div class="promise-text l">
+					<p class="text-title">正品保证</p>
+					<p class="text-next">专注美妆护肤40年</p>
+				</div>
+			</section>
+			<section class="promise-item l">
+				<div class="promise-icon l" id="icon3"></div>
+				<div class="promise-text l">
+					<p class="text-title">保税仓直送</p>
+					<p class="text-next">包税零扣关 ¥168免邮</p>
+				</div>
+			</section>
+			<section class="promise-item l">
+				<div class="promise-icon l" id="icon4"></div>
+				<div class="promise-text l">
+					<p class="text-title">30天退换保证</p>
+					<p class="text-next">为您提供售后无忧保障</p>
+				</div>
+			</section>
+			<section class="promise-item l promise-item-last">
+				<div class="promise-icon l" id="icon5"></div>
+				<div class="promise-text l">
+					<p class="text-title">香港上市</p>
+					<p class="text-next">股票代码 HK00178</p>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div id="footer-c">
+				<section id="footer-left">
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">常见问题</li>
+							<li class="sli">常见问题</li>
+							<li class="sli">联络我们</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">付款方式</li>
+							<li class="sli">付款方式</li>
+							<li class="sli">积分支付</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">配送方式</li>
+							<li class="sli">配送说明</li>
+							<li class="sli">追踪订单</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">售后服务</li>
+							<li class="sli">正品保证</li>
+							<li class="sli">价格承诺</li>
+							<li class="sli">30日退换保证</li>
+							<li class="sli">退款程序</li>
+							<li class="sli">更改订单</li>
+						</ul>
+					</div>
+					<div class="footer-help l">
+						<ul>
+							<li class="bli">莎莎会员</li>
+							<li class="sli">积分奖赏</li>
+							<li class="sli">VIP会员计划</li>
+						</ul>
+					</div>
+				</section>
+				<section id="footer-right">
+					<div id="footer-weibo">
+						<img src="img/index/icon/weiboQR.jpg" />
+						<p>莎莎网官方微博</p>
+						<p>@莎莎网</p>
+					</div>
+					<div id="footer-weixin">
+						<img src="img/index/icon/weixinQR.jpg" />
+						<p>莎莎网官方微信</p>
+						<p>ID:hksasadotcom</p>
+					</div>
+				</section>
+				<section id="c-bot">
+					<img src="img/index/icon/foot-pic.jpg" />
+				</section>
+
+			</div>
+			<div id="footer-bott">
+				<div id="bott-c">
+					<div id="bott-about">
+						<a href="#" class="abo-a">关于莎莎</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">使用条款</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">隐私策略</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">批发服务</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">招商合作</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">帮助中心</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">港澳店推广</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">人才招聘</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">联系我们</a>
+						<span class="abo-a">|</span>
+						<a href="#" class="abo-a">其他送货地址</a>
+					</div>
+					<div id="bott-com">Copyright 2000-2019 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

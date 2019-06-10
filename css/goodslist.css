@@ -1,0 +1,325 @@
+/****************大身体******************/
+#body{
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+}
+#body-c{
+	width: 1090px;
+	height: auto;
+	overflow: hidden;
+}
+#crumbs{
+	width: 1090px;
+	height: 20px;
+	background-color: #f2f2f2;
+	color: #888888;
+	font-size: 14px;
+	margin: 15px 0;
+}
+/**************选择商品*****************/
+#findgoods{
+	width: 100%;
+	height:auto ;
+	background-color: white;
+}
+.select{
+	width: 1065px;
+	height: 43px;
+	background-color: white;
+	border-bottom: 1px solid #d7d7d7;
+	line-height: 43px;
+	padding: 0 10px 0 15px;
+}
+.grey{
+	color: #8d8d8d;
+}
+.brand{
+	width: 100%;
+	height: 64px;
+	background-color: white;
+	padding: 12px 10px 0 15px;
+	border-bottom: 1px dotted #e9e9e9;
+}
+.brul{
+	width: 785px;
+	height: 64px;
+	margin-left: 120PX;
+}
+.brli{
+	width: 157px;
+	height: 32px;
+	color: #3e3e3e;
+}
+.showmore{
+	width: 1000px;
+	height: 30px;
+	padding: 0 10px 0 81px;
+}
+.golden{
+	color: #c69a62;
+}
+.selectmore{
+	margin: 2px 25px 0 0;
+    float: right;
+    border: 1px solid #e9e9e9;
+    border-top: none;
+    padding: 10px 6px 2px 6px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color:  #b4b5b8;;
+}
+.xsj{
+	font-size: 30px;
+	transform: rotate(180deg);
+	line-height: 27px;
+	margin-left: -5px;
+}
+.option{
+	text-align: center;
+	line-height: 30px;
+}
+/*************排序销售***************/
+#rank{
+	width: 1090px;
+	height: 30px;
+	background-color: white;
+	margin: 10px 0 25px 0;
+}
+#rank ul li{
+	padding: 0 25px;
+	line-height: 30px;
+	color: #3e3e3e;
+	position: relative;
+}
+.bor{
+	border-right: 1px solid gainsboro;
+}
+.gnum{
+	line-height: 30px;
+	color: #8d8d8d;
+}
+#findgoods ul li a,#rank a,#goodslist-body-bot a{
+	text-decoration: none;
+	color: #3e3e3e;;
+}
+.page{
+	padding: 0 2px 0 0;
+	line-height: 30px;
+}
+#rank .iconfont,#goodslist-body-bot .iconfont{
+	font-size: 40px;
+	transform: rotate(90deg);
+	line-height: 32px;
+	margin-left: -10px;
+}
+#zuo .iconfont,#goodslist-body-bot #zuo .iconfont{
+	font-size: 40px;
+	transform: rotate(270deg);
+	line-height: 30px;
+	margin-right: -10px;
+}
+#xz{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-image: url(../img/goodslist/e.png);
+}
+#sold{
+	color: #c69a62;
+}
+#goods{
+	width: 1090px;
+	height: 2951px;
+	background: #f2f2f2;
+	position: relative;
+}
+.rouge{
+	width: 253px;
+	height: 470px;
+	background: white;
+	margin-bottom: 25px;
+	margin-right: 26px;
+	float: left;
+	position: relative;
+	transition: height .3s;
+}
+.son{
+	width: 253px;
+	height: 43px;
+	background: white;
+	position: absolute;
+	top:430px;
+	left: 0;
+	transition: height .3s; 
+	z-index: 2;
+}
+.rouge:hover .son{
+	height: 70px;
+	box-shadow: 0px 6px 10px rgba(0,0,0,.2);
+}
+.rouge:hover{
+	box-shadow: 0px 4px 20px rgba(0,0,0,.2);
+}
+.rouge:hover .buy-now{
+	display: block;
+}
+
+.rouge img{
+	width: 253px;
+	height: 253px;
+}
+.buy-now{
+	width: 223px;
+	height: 23px;
+    padding: 10px 5px;
+    background: #ec3e7d;
+    text-align: center;
+    line-height: 23px;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    display: none;
+}
+.country{
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #999;;
+}
+.coun-pic{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.country span{
+	float: right;
+	line-height: 20px;
+}
+.coun-pic img{
+	width: 20px;
+	height: 20px;
+}
+.sold-price{
+	width: 223px;
+	height: 26px;
+	border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding: 10px 15px;
+    color: #858587;
+}
+.n-pri{
+	font-size: 24px;
+	color: #ec3e7d;
+    margin-right: 5px;
+}
+.o-pri{
+	color: #858587;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+.count{
+	color: #c69a62;
+    margin-top: 2px;
+    font-size: 15px;
+}
+.decora{
+	width: 223px;
+	height: 108px;
+	padding: 12px 15px;
+    overflow: hidden;
+}
+.b{
+	color: #ee9c23;
+	margin-right: 5px;
+}
+.bra{
+	font-size: 13px;
+}
+.limitnum{
+	margin-top: 3px;
+	font-size: 13px;
+    color: #3e3e3e;
+    height: 40px;
+}
+.color{
+	margin-top: ;
+	font-size: 13px;
+	color: #404040;
+}
+
+
+.mgrr{
+	margin-right: 0px;
+}
+#nextpage{
+	width: 253px;
+	height: 472px;
+	background: white;
+	position: absolute;
+	bottom: 3px;
+	right: 0;
+}
+#nextimg{
+	width: 111px;
+    height: 111px;
+    margin: 140px auto 50px auto;
+    background-image: url(../img/goodslist/tips.png);
+    background-position: -150px -361px;
+}
+.next{
+	color: #c69a62;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+}
+.pageinf{
+	color: #cacaca;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+#jiao{
+	width: 72px;
+    height: 36px;
+    background: salmon;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/goodslist/tips.png);
+    background-position: -308px -192px;
+    background-color: #f2f2f2;
+}
+/********************大身体里面的底部*******************/
+#goodslist-body-bot{
+	width: 1090px;
+	height: 23px;
+	padding: 20px 0;
+	margin: 50px 0;
+	background-color: #f2f2f2;
+}
+.flip{
+	border: 1px solid #dddddd;
+    color: #666666;
+    display: inline-block;
+    margin-left: 5px;
+    width: auto;
+    border-radius: 14px;
+    padding: 0 7px;
+    line-height: 23px;
+}
+.f{
+    color: #666666;
+    margin-left: 5px;
+    width: auto;
+    padding: 0 7px;
+    line-height: 23px;
+}
+.active{
+	border-color: #ec3e7d;
+    color: #ec3e7d;
+}

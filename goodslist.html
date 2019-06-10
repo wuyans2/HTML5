@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="commonCss/header.css" />
+		<link rel="stylesheet" href="commonCss/footer.css" />
+		<link rel="stylesheet" href="css/goodslist.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/goodslistCreate.js"></script>
+		<script type="text/javascript" src="js/goodslist-jquery.js"></script>
+	</head>
+
+	<body>
+		<header></header>
+
+		<div id="body">
+			<div id="body-c" class="c">
+				<div id="crumbs">
+					首页/搜索"口红"
+				</div>
+				<div id="findgoods">
+					<ul>
+						<li class="select">
+							<span class="l grey">已选</span>
+							<span class="r golden">重置筛选项</span>
+						</li>
+						<li class="brand">
+							<span class="l grey">分类</span>
+							<ul class="brul">
+								<li class="brli l">
+									<a href="">睡眠面膜</a>
+								</li>
+								<li class="brli l">
+									<a href="">润唇膏</a>
+								</li>
+								<li class="brli l">
+									<a href="">胭脂膏</a>
+								</li>
+								<li class="brli l">
+									<a href="">唇膏</a>
+								</li>
+								<li class="brli l">
+									<a href="">唇彩</a>
+								</li>
+								<li class="brli l">
+									<a href="">唇笔</a>
+								</li>
+								<li class="brli l">
+									<a href="">彩妆盒/套装</a>
+								</li>
+							</ul>
+							<span class="selectmore"><a href="">多选+</a></span>
+						</li>
+						<li class="brand">
+							<span class="l grey">品牌</span>
+							<ul class="brul">
+								<li class="brli l">
+									<a href="">SNP</a>
+								</li>
+								<li class="brli l">
+									<a href="">伊丽莎白·雅顿</a>
+								</li>
+								<li class="brli l">
+									<a href="">瑞士葆丽美</a>
+								</li>
+								<li class="brli l">
+									<a href="">恋爱魔镜</a>
+								</li>
+								<li class="brli l">
+									<a href="">NATIO</a>
+								</li>
+								<li class="brli l">
+									<a href="">泉肌</a>
+								</li>
+								<li class="brli l">
+									<a href="">海蓝之谜</a>
+								</li>
+								<li class="brli l">
+									<a href="">奇士美</a>
+								</li>
+								<li class="brli l">
+									<a href="">倩碧</a>
+								</li>
+								<li class="brli l">
+									<a href="">韩彩妮</a>
+								</li>
+							</ul>
+							<span class="selectmore"><a href="">多选+</a></span>
+						</li>
+						<li class="brand">
+							<span class="l grey">功效</span>
+							<ul class="brul">
+								<li class="brli l">
+									<a href="">减淡唇纹</a>
+								</li>
+								<li class="brli l">
+									<a href="">提亮肤色</a>
+								</li>
+								<li class="brli l">
+									<a href="">不脱色</a>
+								</li>
+								<li class="brli l">
+									<a href="">保湿</a>
+								</li>
+								<li class="brli l">
+									<a href="">滋润</a>
+								</li>
+								<li class="brli l">
+									<a href="">淡化唇色</a>
+								</li>
+								<li class="brli l">
+									<a href="">唇部去角质</a>
+								</li>
+								<li class="brli l">
+									<a href="">唇部防晒</a>
+								</li>
+								<li class="brli l">
+									<a href="">丰唇</a>
+								</li>
+								<li class="brli l">
+									<a href="">舒缓</a>
+								</li>
+							</ul>
+						</li>
+						<li class="showmore">
+							<span class="iconfont xsj r">&#xe608;</span>
+							<span class="r option"><a href="">显示更多筛选选项</a></span>
+						</li>
+					</ul>
+				</div>
+				<div id="rank">
+					<ul>
+						<li class="bor l">排序</li>
+						<li class="bor l">
+							<a href=""><span id="sold">销售</span></a>
+							<div id="xz"></div>
+						</li>
+						<li class="bor l">
+							<a href="">人气</a>
+						</li>
+						<li class="bor l">
+							<a href="">评分</a>
+						</li>
+						<li class="bor l">
+							<a href="">上架时间</a>
+						</li>
+						<li class="bor l">
+							<a href="">价格</a>
+						</li>
+						<li class="l">
+							<input type="checkbox" />&nbsp;&nbsp;只看特卖
+						</li>
+					</ul>
+
+					<span class="gnum">(共932件商品)</span>
+					<a href="">
+						<span class="r iconfont">&#xe608;</span>
+						<span class="r page">1/40</span>
+						<span id="zuo"><span class="r iconfont">&#xe608;</span></span>
+					</a>
+				</div>
+				<div id="goods">
+					<!--<div class="rouge">
+						<div class="country">
+							<div class="coun-pic"><img src="img/index/new/western_icon.png" /> </div>
+							<span>欧美品牌</span>
+						</div>
+						<a href="detail.html"><img src="img/goodslist/goodslist1.jpg" /></a>
+						<div class="sold-price">
+							<span class="n-pri">￥99.0</span>
+							<span class="o-pri">￥130.0</span>
+							<span class="count r">7.6折</span>
+						</div>
+						<div class="decora">
+							<p><span class="b"><b>香港特快直送 零扣关 包税</b></span><span class="bra"><b>宝柏</b></span></p>
+							<p class="limitnum"><span>限量小萌鸟唇蜜口红彩妆盒</span></p>
+							<p class="color"><span>3.8克</span><span>&nbsp;&nbsp;#51莹亮珊瑚橙色</span> </p>
+						</div>
+						<div class="son">
+							<div class="buy-now">
+								<span>加入购物车</span>
+							</div>
+						</div>
+					</div>-->
+					<div id="nextpage">
+						<div id="nextimg"></div>
+						<p class="next">下一页</p>
+						<p class="pageinf">显示下一页结果</p>
+						<div id="jiao"></div>
+					</div>
+
+				</div>
+
+				<div id="goodslist-body-bot">
+					<a href=""><span class="r iconfont">&#xe608;</span></a>
+					<a class="r flip">41</a>
+					<a class="r flip">40</a>
+					<a class="r f">···</a>
+					<a class="r flip">3</a>
+					<a class="r flip">2</a>
+					<a class="r flip active">1</a>
+					<a href=""><span id="zuo"><span class="r iconfont">&#xe608;</span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+
+</html>

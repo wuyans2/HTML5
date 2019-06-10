@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/register-login.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/register-jquery.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<!--顶部-->
+			<section id="top">
+				<div id="top-c">
+					<div id="top-c-left">
+						<span id="login">
+						<span>欢迎光临莎莎网！</span>
+						<a href="login.html" class="login">登录</a>
+						<span>或</span>
+						<a href="register.html">免费注册</a>
+						</span>
+					</div>
+					<div id="top-c-right">
+						<ul>
+							<li class="top-li l" id="mycount">
+								<a href="#">
+									我的账户
+									<img src="img/index/header/xiasanjiao.png" />
+								</a>
+								<ul id="mybox">
+									<li class="my">我的订单</li>
+									<li class="my">我的积分</li>
+									<li class="my">我的优惠券</li>
+									<li class="my">我的收藏</li>
+									<li class="my">我的评价</li>
+								</ul>
+							</li>
+							<li class="top-li l">
+								<a href="#"><span class="iconfont rose">&#xe61a;</span> 我的购物车</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">我的收藏</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">我的站内信</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">积分中心</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">Global site</a>
+							</li>
+							<li class="top-li l">
+								<a href="#">关注我们</a>&nbsp;
+								<i><img src="img/index/header/weibo.png" /></i>&nbsp;
+								<i><img src="img/index/header/weixin.png" /></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="logo">
+				<div id="logo-c">
+					<div id="shashalogo">
+						<a href="index.html"><img src="img/register-login/logo.png" /></a>
+					</div>
+				</div>
+			</section>
+		</header>
+		<div id="page" class="c">
+			<div id="reg">
+				<div id="reginp">
+					<div id="signup">
+						<div id="title">
+							注册账号
+							<span>已有莎莎账号？<a href="login.html">立即登录</a></span>
+						</div>
+						<div id="signupbox">
+							<ul>
+								<li class="reg-item">
+									<input type="text" class="inptx" placeholder="请输入邮箱/手机号，最少5个字符" />
+									<p class="inptp">请输入邮箱或手机号码</p>
+								</li>
+								<li class="reg-item">
+									<input type="password" class="inptx" placeholder="请输入密码6-16位字母和数字的组合" />
+									<p class="inptp">输入不正确，最少6个字符，最多16个字符</p>
+								</li>
+								<li class="reg-item" id="sure">
+									<input type="password" class="inptx" placeholder="再次填写密码" />
+									<p class="inptp">密码与确认密码不相符，请重新填写</p>
+								</li>
+								<li class="reg-item">
+									<input type="text" class="inptx yzm" placeholder="填写验证码" />
+									<img src="img/register-login/yzm.jpg" />
+									<span id="mohu"><a href="">看不清?换一张</a></span>
+									<p class="inptp">请正确填写验证码</p>
+								</li>
+								<li class="reg-item-check">
+									<input type="checkbox" class="read" id="check" /> 你已阅读及接受 <span><a href="">使用条款</a></span> 及<span> <a href="">隐私政策</a></span><span id="check-test">&nbsp;&nbsp;&nbsp;请选择</span>
+								</li>
+								<li class="reg-item-check">
+									<input type="checkbox" class="read" />
+									<span>我不同意莎莎使用我的个人资料作直接促销</span>
+								</li>
+								<li class="reg-item-btn">
+									<button id="reg-btn">注册</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
