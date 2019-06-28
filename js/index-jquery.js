@@ -9,10 +9,9 @@ $(function() {
 
 	//大图轮播
 	slider();
-
+	//一进来就应该是下面第一个小按钮发亮
+	$('.picBtn').eq(0).css('background-color', '#fa3778');
 	function slider() {
-		//一进来就应该是下面第一个小按钮发亮
-		$('.picBtn').eq(0).css('background-color', '#fa3778');
 		function changePic(index) {
 			for(var j = 0; j < $('.bigPic').length; j++) {
 				$('.bigPic').eq(j).css('opacity', '0');
@@ -146,7 +145,8 @@ $(function() {
 		} else {
 			ff = 'r'
 		}
-		everyday = `<div class="check-goods ${ff}">
+		everyday = `<a href="#">
+						<div class="check-goods ${ff}">
 								<img src="${data.src}"/>
 								<div class="check-goods-info">
 									<p class="check-info-title">${data.title}</p>
@@ -155,6 +155,7 @@ $(function() {
 									<span class="check-buynow">立即疯抢</span>
 								</div>	
 							</div>
+					</a>	
 							`;
 		$('#must-check-body').append(everyday);
 	})
@@ -162,7 +163,8 @@ $(function() {
 	//限时特卖动态创建
 	var limited = '';
 	$.each(limiteddate, function(index, data) {
-		limited = `<div class="limited-goods">
+		limited = `<a href="#">
+						<div class="limited-goods">
 									<div class="limited-goods-img">
 										<img src="${data.src}" />
 										<i class="limited-count">
@@ -199,7 +201,8 @@ $(function() {
 											<span class="limted-buynow">马上抢</span>
 										</div>
 									</div>
-								</div>`;
+								</div>
+						</a>`;
 		$('#limited-offer-body').append(limited);
 	})
 
