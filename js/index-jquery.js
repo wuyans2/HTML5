@@ -11,6 +11,8 @@ $(function() {
 	slider();
 
 	function slider() {
+		//一进来就应该是下面第一个小按钮发亮
+		$('.picBtn').eq(0).css('background-color', '#fa3778');
 		function changePic(index) {
 			for(var j = 0; j < $('.bigPic').length; j++) {
 				$('.bigPic').eq(j).css('opacity', '0');
@@ -60,6 +62,11 @@ $(function() {
 		for(var i = 0; i < $('.picBtn').length; i++) {
 			bind(i);
 		}
+		//当hover上去的时候清除轮播，移开鼠标之后恢复轮播
+		$(".bigPic").hover(function(){
+			console.log('aaa')
+	        clearInterval(timer);
+ 	    },slider);
 	}
 
 	//锚点导航栏出现的位置
@@ -116,28 +123,19 @@ $(function() {
 	maodian1("#floor_2");
 	maodian1("#floor_3");
 
-	//公告的水平轮播	
-	var iNow = 0;
-	setInterval(function() {
-		iNow++;
-		if(iNow > $('.oli').length - 1) {
-			iNow = 0;
-			change();
-			$('#ulbox').css('transition', '');
-
-		} else {
-			$('#ulbox').css('transition', '0.4s');
-			change();
-		}
-		console.log('水平轮播' + iNow);
-	}, 2000)
-
-	function change() {
-		var nowtop = -iNow * 28;
-		console.log(nowtop);
-		$('#ulbox').css('top', nowtop);
-	}
-
+	//公告的水平轮播	  修改
+	var num=0;
+    setInterval(function(){
+    	num++;
+    	if(num>4){
+    		num=0;
+    		$('#ulbox').css({'top':-28*num+'px'});
+    		num=1;
+    	}
+    	$('#ulbox').animate({'top':-28*num+'px'})
+    },2000)
+    
+    
 	//每日必看的动态创建
 	var everyday = '';
 	$.each(everydaydate, function(index, data) {
