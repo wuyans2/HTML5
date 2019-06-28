@@ -281,7 +281,9 @@
 
 #fist-item:hover #category-list-item-show{
 	display: block;
+	border-left-color:white ;
 }
+
 .list-item-pic{
 	width: 20px;
 	height: 20px;
