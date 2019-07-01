@@ -257,7 +257,9 @@
 	background-image: url(../img/index/header/jianjiaohao-r2.png);
 }
 /*******************列表第一个的二级菜单********************/
-#category-list-item-show{
+#category-list-item-show,
+#category-list-item-show1,
+#category-list-item-show2{
 	width: 340px;
     overflow: hidden;
     padding: 10px 25px;
@@ -269,17 +271,23 @@
     background-color: white;
     display: none;
 }
-#category-list-item-show p{
+#category-list-item-show p,
+#category-list-item-show1 p,
+#category-list-item-show2 p{
 	font-size: 13px;
 	line-height: 30px;
 	color: #555;;
 }
-#category-list-item-show p span{
+#category-list-item-show p span,
+#category-list-item-show1 p span,
+#category-list-item-show1 p span{
 	padding: 0 8px 0 0;
 	color: #999;
 }
 
-#fist-item:hover #category-list-item-show{
+#fist-item:hover #category-list-item-show,
+#sec-item:hover #category-list-item-show1,
+#third-item:hover #category-list-item-show2{
 	display: block;
 	border-left-color:white ;
 }
